@@ -38,7 +38,7 @@
             </li>
 
             <li>
-                <a href="#">Certificações</a>
+                <a href="#" id="verCertificacoes">Certificações</a>
             </li>
         </ul>
         <div id="social-links">
@@ -63,6 +63,12 @@
             var caminhoDoArquivo = './assets/Curriculo.pdf';
 
             window.open(caminhoDoArquivo, '_blank');
+            
+        });
+
+        document.getElementById('verCertificacoes').addEventListener('click', function() {
+            var caminhoDasCertificacoes = './assets/Certificado TCS Low CODE.pdf';
+            window.open(caminhoDasCertificacoes, '_blank');
         });
     </script>
 
