@@ -26,7 +26,7 @@
 
         <ul>
             <li>
-                <a href="#">Ver meu currículo</a>
+                <a href="#" id="verCurriculo">Ver meu currículo</a>
             </li>
 
             <li>
@@ -56,6 +56,15 @@
             Links Felipe Sanches
         </footer>
     </div>
+
+    <script>
+        document.getElementById('verCurriculo').addEventListener('click', function() {
+
+            var caminhoDoArquivo = './assets/Curriculo.pdf';
+
+            window.open(caminhoDoArquivo, '_blank');
+        });
+    </script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
